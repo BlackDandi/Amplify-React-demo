@@ -1,6 +1,6 @@
 {
   "auth": {
-    "amplifyreactdemoe5b9f7a6": {
+    "amplifyreactdemo": {
       "customAuth": false,
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
@@ -9,6 +9,38 @@
     }
   },
   "parameters": {
+    "AMPLIFY_auth_amplifyreactdemo_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifyreactdemo"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifyreactdemo_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifyreactdemo"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifyreactdemo_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifyreactdemo"
+        }
+      ]
+    },
+    "AMPLIFY_auth_amplifyreactdemo_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "amplifyreactdemo"
+        }
+      ]
+    },
     "AMPLIFY_auth_amplifyreactdemoe5b9f7a6_nativeClientId": {
       "usedBy": [
         {
