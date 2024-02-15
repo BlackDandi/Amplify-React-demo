@@ -5,13 +5,17 @@ import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 import awsExports from './aws-exports';
-import { View, Image } from '@aws-amplify/ui-react';
+import { View, Image} from '@aws-amplify/ui-react';
 import { useTheme } from '@aws-amplify/ui-react';
 import Logo from './imagen/LogoOficial.jpg';
+import {Route,Routes} from "react-router-dom";
 import './App.css';
 import {
- BarraHeader,Fondo,ActionCard
+ BarraHeader,MarketingFooter,
 } from './ui-components';
+import Inicio from "./paginas/Inicio";
+import Salac1 from "./paginas/salac1"
+
 Amplify.configure(awsExports);
 
 const components = {
@@ -52,20 +56,16 @@ export default function App() {
     <Authenticator  hideSignUp={true} components={components} formFields={formFields}>
       
       {({ signOut, user }) => (
-        <main>
+        <main id="inicial" >
           
-          <BarraHeader style={{zIndex:1,marginTop:20,marginRight:valor,marginLeft:valor}}>
+          <BarraHeader style={{zIndex:99999,marginTop:20}}>
           </BarraHeader>
+          <Routes>
+            <Route path="/" element={<Inicio />}></Route>
+            <Route path="/salac1" element={<Salac1 />}></Route>
+          </Routes>
           
-          <Fondo >
-          
-          </Fondo>
-          <ActionCard/> <ActionCard/> <ActionCard/> <ActionCard/> <ActionCard/> <ActionCard/>
-          <div >
-          <h1>Hello {user.username}</h1>
-          <button onClick={signOut}>Salir</button>
-          </div>
-          
+          <MarketingFooter></MarketingFooter>
         </main>
       )}
     </Authenticator>

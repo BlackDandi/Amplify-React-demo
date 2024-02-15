@@ -5,12 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Amplify } from 'aws-amplify';
 import config from './aws-exports';
+import {BrowserRouter} from "react-router-dom";
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
+    </LocalizationProvider>
   </React.StrictMode>
 );
 

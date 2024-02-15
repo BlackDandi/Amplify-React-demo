@@ -83,7 +83,7 @@ export default function ActionCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Classic Long Sleeve T-Shirt"
+            children="fdd"
             {...getOverrideProps(overrides, "Classic Long Sleeve T-Shirt")}
           ></Text>
           <Text

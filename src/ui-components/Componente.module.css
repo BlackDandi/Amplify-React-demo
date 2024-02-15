@@ -1,0 +1,61 @@
+@media (max-width: 1240px) {
+  
+    /* Estilos específicos para pantallas más pequeñas */
+    /* Aquí puedes cambiar la disposición, el tamaño, los márgenes, etc. */
+    .botoncabeza{
+        display: none;
+        
+    }
+    .botonmenu{
+        display: block;
+
+    }
+    .botondesactivado{
+      display: none;
+  }
+  
+    /* Estilos cuando el botón está activado */
+  .botonactivado{
+      display: flex;
+      z-index: 9999;
+      flex-direction: column;
+      top:115px;
+      animation: aparecer 1s ease forwards; 
+      
+  }
+}
+@media (min-width: 1241px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    /* Aquí puedes cambiar la disposición, el tamaño, los márgenes, etc. */
+    
+    .botonmenu{
+        display: none;
+    }
+    .botonactivado{
+      display: none;
+  }
+  .botondesactivado{
+    display: none;
+}
+}
+@media (max-width: 550px) {
+  .letracambio{
+    font-size: 40px;
+  }
+}
+@media (min-width: 551px) {
+  .letracambio{
+    font-size: 60px;
+  }
+}
+@keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(-115px); /* Movimiento hacia abajo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Posición original */
+    }
+  }
+  

@@ -23,21 +23,23 @@ export default function ReviewCard(props) {
     <Flex
       gap="0"
       direction="row"
-      width="960px"
-      height="unset"
+      
+      width="100%"
+      height="500px"
       justifyContent="flex-start"
       alignItems="center"
       position="relative"
-      padding="0px 0px 0px 0px"
+      padding="100px 100px 100px 100px"
       {...getOverrideProps(overrides, "ReviewCard")}
       {...rest}
     >
       <Image
         width="400px"
-        height="351px"
+        height="500px"
         display="block"
         gap="unset"
         alignItems="unset"
+        backgroundColor="white"
         justifyContent="unset"
         shrink="0"
         position="relative"

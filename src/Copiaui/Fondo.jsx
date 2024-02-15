@@ -131,13 +131,12 @@ export default function Fondo(props) {
         <Button
           width="unset"
           height="unset"
+          borderRadius="15px"
           shrink="0"
           size="large"
           isDisabled={false}
           variation="primary"
-          children="Ver salas"
-          borderRadius="35px"
-          backgroundColor="rgba(128,0,64,1)"
+          children="Reservar"
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>

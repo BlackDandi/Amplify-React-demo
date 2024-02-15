@@ -7,154 +7,44 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Button, Divider, Flex, Text, TextField } from "@aws-amplify/ui-react";
-import LogoWithText from "./LogoWithText";
+import { Button, Flex, Text} from "@aws-amplify/ui-react";
 export default function MarketingFooter(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
       gap="32px"
       direction="column"
-      width="1440px"
-      height="unset"
+      width="100%"
+      height="600px"
       justifyContent="flex-start"
       alignItems="center"
       position="relative"
-      padding="40px 40px 40px 40px"
-      backgroundColor="rgba(250,250,250,1)"
+      padding="1.5% 10% 1.5% 10%"
+      backgroundColor="rgba(128,0,64,1)"
       {...getOverrideProps(overrides, "MarketingFooter")}
       {...rest}
     >
+
       <Flex
-        gap="16px"
+        gap="1%"
         direction="row"
         width="unset"
-        height="unset"
-        justifyContent="space-between"
-        alignItems="flex-start"
-        shrink="0"
-        alignSelf="stretch"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 313")}
-      >
-        <Flex
-          gap="10px"
-          direction="column"
-          width="unset"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 434")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="20px"
-            fontWeight="600"
-            color="rgba(48,64,80,1)"
-            lineHeight="30px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="471px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Sign up for our newsletter"
-            {...getOverrideProps(overrides, "Sign up for our newsletter")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="471px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="No spam. We promise."
-            {...getOverrideProps(overrides, "No spam. We promise.")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 435")}
-        >
-          <TextField
-            width="300px"
-            height="unset"
-            placeholder="Your email"
-            shrink="0"
-            size="default"
-            isDisabled={false}
-            labelHidden={true}
-            variation="default"
-            {...getOverrideProps(overrides, "TextField")}
-          ></TextField>
-          <Button
-            width="unset"
-            height="unset"
-            shrink="0"
-            size="default"
-            isDisabled={false}
-            variation="default"
-            children="Subscribe"
-            {...getOverrideProps(overrides, "Button")}
-          ></Button>
-        </Flex>
-      </Flex>
-      <Divider
-        width="unset"
-        height="1px"
-        shrink="0"
-        alignSelf="stretch"
-        size="small"
-        orientation="horizontal"
-        {...getOverrideProps(overrides, "Divider39413816")}
-      ></Divider>
-      <Flex
-        gap="24px"
-        direction="row"
-        width="unset"
-        height="unset"
+        height="100%"
         justifyContent="flex-start"
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
-        position="relative"
-        padding="0px 0px 0px 0px"
+        position="center"
+        padding="36px 36px 36px 36px"
+        backgroundColor="rgba(255,255,255,1)"
+        borderRadius="35px"
         {...getOverrideProps(overrides, "Frame 40529766988")}
       >
         <Flex
           gap="8px"
           direction="column"
-          width="unset"
-          height="unset"
+          width="25%"
+          height="25%"
           justifyContent="flex-start"
           alignItems="flex-start"
           shrink="0"
@@ -164,16 +54,16 @@ export default function MarketingFooter(props) {
         >
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="22px"
             fontWeight="600"
-            color="rgba(48,64,80,1)"
+            color="black"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -181,21 +71,22 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Products"
+            children="Acerca"
             {...getOverrideProps(overrides, "Products")}
           ></Text>
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="19px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -203,21 +94,22 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Libraries"
+            children="Mision"
             {...getOverrideProps(overrides, "Libraries")}
           ></Text>
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="19px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -225,78 +117,35 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="CLI"
-            {...getOverrideProps(overrides, "CLI")}
+            children="Vision"
+            {...getOverrideProps(overrides, "Libraries")}
           ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="272px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Studio"
-            {...getOverrideProps(overrides, "Studio")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="272px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Hosting"
-            {...getOverrideProps(overrides, "Hosting")}
-          ></Text>
+          
         </Flex>
         <Flex
           gap="8px"
           direction="column"
-          width="unset"
-          height="unset"
+          width="25%"
+          height="25%"
           justifyContent="flex-start"
           alignItems="flex-start"
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 404")}
+          {...getOverrideProps(overrides, "Frame 403")}
         >
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="22px"
             fontWeight="600"
-            color="rgba(48,64,80,1)"
+            color="black"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -304,21 +153,22 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Resources"
-            {...getOverrideProps(overrides, "Resources")}
+            children="Servicios"
+            {...getOverrideProps(overrides, "Products")}
           ></Text>
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="19px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -326,21 +176,22 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Docs"
-            {...getOverrideProps(overrides, "Docs")}
+            children="Capacitación"
+            {...getOverrideProps(overrides, "Libraries")}
           ></Text>
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="19px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -348,21 +199,22 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Learn"
-            {...getOverrideProps(overrides, "Learn")}
+            children="Uso de instalaciones"
+            {...getOverrideProps(overrides, "Libraries")}
           ></Text>
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="19px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -370,21 +222,22 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Examples"
-            {...getOverrideProps(overrides, "Examples")}
+            children="Impresión 3D"
+            {...getOverrideProps(overrides, "Libraries")}
           ></Text>
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="19px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -392,34 +245,59 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Changelog"
-            {...getOverrideProps(overrides, "Changelog")}
+            children="Soluciones Especializadas Tecnologicas"
+            {...getOverrideProps(overrides, "Libraries")}
           ></Text>
+          <Text
+            fontFamily="Inter"
+            fontSize="19px"
+            fontWeight="400"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
+            lineHeight="24px"
+            textAlign="center"
+            display="block"
+            direction="column"
+            justifyContent="unset"
+            letterSpacing="0.01px"
+            width="200px"
+            height="unset"
+            gap="unset"
+            alignItems="unset"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="Desarrollo de proyectos"
+            {...getOverrideProps(overrides, "Libraries")}
+          ></Text>
+
+          
         </Flex>
         <Flex
           gap="8px"
           direction="column"
-          width="unset"
-          height="unset"
+          width="25%"
+          height="25%"
           justifyContent="flex-start"
           alignItems="flex-start"
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 40539413972")}
+          {...getOverrideProps(overrides, "Frame 403")}
         >
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="22px"
             fontWeight="600"
-            color="rgba(48,64,80,1)"
+            color="black"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -427,21 +305,22 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Company"
-            {...getOverrideProps(overrides, "Company")}
+            children="Certificaciones"
+            {...getOverrideProps(overrides, "Products")}
           ></Text>
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="19px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -449,21 +328,22 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="About us"
-            {...getOverrideProps(overrides, "About us")}
+            children="Diseño Profesional"
+            {...getOverrideProps(overrides, "Libraries")}
           ></Text>
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="19px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -471,21 +351,22 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Contact"
-            {...getOverrideProps(overrides, "Contact")}
+            children="Diseño Básico"
+            {...getOverrideProps(overrides, "Libraries")}
           ></Text>
           <Text
             fontFamily="Inter"
-            fontSize="16px"
+            fontSize="19px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
             lineHeight="24px"
-            textAlign="left"
+            textAlign="center"
             display="block"
             direction="column"
             justifyContent="unset"
             letterSpacing="0.01px"
-            width="272px"
+            width="200px"
             height="unset"
             gap="unset"
             alignItems="unset"
@@ -493,71 +374,142 @@ export default function MarketingFooter(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Blog"
-            {...getOverrideProps(overrides, "Blog")}
+            children="Green Belt"
+            {...getOverrideProps(overrides, "Libraries")}
           ></Text>
+          <Text
+            fontFamily="Inter"
+            fontSize="19px"
+            fontWeight="400"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
+            lineHeight="24px"
+            textAlign="center"
+            display="block"
+            direction="column"
+            justifyContent="unset"
+            letterSpacing="0.01px"
+            width="200px"
+            height="unset"
+            gap="unset"
+            alignItems="unset"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="Yellow Belt"
+            {...getOverrideProps(overrides, "Libraries")}
+          ></Text>
+          <Text
+            fontFamily="Inter"
+            fontSize="19px"
+            fontWeight="400"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
+            lineHeight="24px"
+            textAlign="center"
+            display="block"
+            direction="column"
+            justifyContent="unset"
+            letterSpacing="0.01px"
+            width="200px"
+            height="unset"
+            gap="unset"
+            alignItems="unset"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="NOM ECO680"
+            {...getOverrideProps(overrides, "Libraries")}
+          ></Text>
+          
         </Flex>
-      </Flex>
-      <Divider
-        width="unset"
-        height="1px"
-        shrink="0"
-        alignSelf="stretch"
-        size="small"
-        orientation="horizontal"
-        {...getOverrideProps(overrides, "Divider39413869")}
-      ></Divider>
-      <Flex
-        gap="0"
-        direction="row"
-        width="unset"
-        height="unset"
-        justifyContent="space-between"
-        alignItems="center"
-        shrink="0"
-        alignSelf="stretch"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 433")}
-      >
-        <LogoWithText
-          width="127.88px"
-          height="18.91px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          color="neutral"
-          {...getOverrideProps(overrides, "LogoWithText")}
-        ></LogoWithText>
-        <Text
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          color="rgba(102,112,133,1)"
-          lineHeight="24px"
-          textAlign="right"
-          display="block"
+        <Flex
+          gap="8px"
           direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
+          width="25%"
+          height="25%"
+          justifyContent="flex-start"
+          alignItems="flex-start"
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="© 2023 AWS Amplify UI. All rights reserved."
-          {...getOverrideProps(
-            overrides,
-            "\u00A9 2023 AWS Amplify UI. All rights reserved."
-          )}
-        ></Text>
+          {...getOverrideProps(overrides, "Frame 403")}
+        >
+          <Text
+            fontFamily="Inter"
+            fontSize="22px"
+            fontWeight="600"
+            color="black"
+            lineHeight="24px"
+            textAlign="center"
+            display="block"
+            direction="column"
+            justifyContent="unset"
+            letterSpacing="0.01px"
+            width="200px"
+            height="unset"
+            gap="unset"
+            alignItems="unset"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="Contacto"
+            {...getOverrideProps(overrides, "Products")}
+          ></Text>
+          <Text
+            fontFamily="Inter"
+            fontSize="19px"
+            fontWeight="400"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
+            lineHeight="24px"
+            textAlign="center"
+            display="block"
+            direction="column"
+            justifyContent="unset"
+            letterSpacing="0.01px"
+            width="200px"
+            height="unset"
+            gap="unset"
+            alignItems="unset"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="Directorio"
+            {...getOverrideProps(overrides, "Libraries")}
+          ></Text>
+          <Text
+            fontFamily="Inter"
+            fontSize="19px"
+            fontWeight="400"
+            color="rgba(128,0,64,1)"
+            textDecoration="underline"
+            lineHeight="24px"
+            textAlign="center"
+            display="block"
+            direction="column"
+            justifyContent="unset"
+            letterSpacing="0.01px"
+            width="200px"
+            height="unset"
+            gap="unset"
+            alignItems="unset"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="+52 618 366 4848"
+            {...getOverrideProps(overrides, "Libraries")}
+          ></Text>
+          
+        </Flex>
+        
       </Flex>
+
     </Flex>
   );
 }
